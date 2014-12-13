@@ -19,7 +19,7 @@
 #include "cpuShot.h"
 #include "User.h"
 using namespace std;
-void callPrint(Shot*);
+
 
 
 
@@ -57,22 +57,21 @@ int main(int argc, char** argv) {
     Cpu ai(cpuLoc);
 //show cpu
 cout<<ai.getCpu()<<endl;
-
+cout<<ai.getcpuLoc()<<endl;
+cout<<endl;
 Shot *q;
 Cpu *r;
 q = new Shot(5);
 r = new Cpu (3,15);
 q->print();
 r->print();
-cout<<"call print function"<<endl;
-callPrint(q);
-callPrint(r);
+
 cout<<endl;
 
 
 
 
-User hope("tony","usa",4);
+User hope("tony","usa",40);
 hope.printInfo();
 delete q;
 delete r;

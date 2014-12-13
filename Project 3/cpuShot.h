@@ -15,15 +15,17 @@ class Cpu : public Shot
               //User Input Member
        int cpuRand;
        int a;
+       int cpuLoc;
     public:
   
   
           
     void set(int);
- 
+   void cpuLocation();
     int getCpu()const
     {return cpuRand;}
-   
+    int getcpuLoc()const
+    { return cpuLoc;}
     void print();
     Cpu (int u = 0, int v = 0);
    };

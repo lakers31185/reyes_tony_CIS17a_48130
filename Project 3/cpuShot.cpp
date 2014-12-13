@@ -29,3 +29,8 @@ using namespace std;
  Cpu::Cpu(int u, int v):Shot(u){
      a=v;
  }
+void Cpu::cpuLocation()
+ {
+    srand(static_cast<unsigned int>(time(0)));  
+    cpuLoc=rand()%100  ;
+ }
