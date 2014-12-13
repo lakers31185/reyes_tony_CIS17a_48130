@@ -6,29 +6,36 @@
  * Shot Location Specifications
  */
 
+#include <iostream> 
+#include<cstdlib> 
+#include <fstream>
+using namespace std;
 #ifndef SHOT_H
 #define	SHOT_H
 
+
 //Shot Location Class
-class Shot{
+class Shot 
+{
     
     private:
-       int user;
-     
-    
-public:
-    Shot (int);
-    
-    void setLoc(int);
-    int getLoc()const
-    {return user;}
+       int user;            //User Input Member
+       int pos;
+       int x;
+    public:
+   int Position (int);            //Shot Constructor (1-3) with Validation
    
-    
-    
-    
-    
-};
-              
+    void Choose();
+    int getLoc()const       //Get Validated Location & Return
+   {return user;}
 
+    
+    virtual void print();
+    
+    
+    
+    Shot(int u = 0);
+   };
+              
 #endif	/* SHOT_H */
 

@@ -2,21 +2,30 @@
  * File:   shot.cpp
  * Author: Tony Reyes
  * December 6, 2014, 12:20 PM
- * Random CPU Shot Location Specifications
+ * Project 2
+ * Shot Location With Validation Implementation
  */
-
 //My Libraries
-#include "cpuShot.h"      //cpuShot Class File
+#include "cpuShot.h"      //Shot Class File
 #include <iostream> 
-#include <cstdlib> 
- #include<iomanip> 
- #include <ctime> 
+#include<cstdlib> 
+#include <fstream>
+using namespace std;
 
-Cpu::Cpu(int loc){
-    cpuRand=loc;
-    //Set Random Seed For Shot Generator 
-   srand(static_cast<unsigned int>(time(0))); 
- 
-   //Set Computer Shot Location to Random 
-   loc=rand()%3+1;  
-}
+//Shot Location Constructor with Validation
+
+
+ void Cpu::set(int para){
+     cpuRand=para;
+    
+     Position(para);
+    
+ }
+ void Cpu::print(){
+     cout<<"Derived Class";
+     Shot::print();
+     cout<<"a="<<a<<endl;
+ }
+ Cpu::Cpu(int u, int v):Shot(u){
+     a=v;
+ }

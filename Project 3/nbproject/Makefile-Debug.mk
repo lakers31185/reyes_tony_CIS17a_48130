@@ -35,7 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Age.o \
+	${OBJECTDIR}/Info.o \
 	${OBJECTDIR}/Shot.o \
+	${OBJECTDIR}/User.o \
+	${OBJECTDIR}/cpuShot.o \
 	${OBJECTDIR}/main.o
 
 
@@ -63,10 +67,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/project_3.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/project_3 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Age.o: Age.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Age.o Age.cpp
+
+${OBJECTDIR}/Info.o: Info.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Info.o Info.cpp
+
 ${OBJECTDIR}/Shot.o: Shot.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Shot.o Shot.cpp
+
+${OBJECTDIR}/User.o: User.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/User.o User.cpp
+
+${OBJECTDIR}/cpuShot.o: cpuShot.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cpuShot.o cpuShot.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

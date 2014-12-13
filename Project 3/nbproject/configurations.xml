@@ -4,6 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Age.h</itemPath>
+      <itemPath>Info.h</itemPath>
+      <itemPath>Intro.h</itemPath>
+      <itemPath>User.h</itemPath>
       <itemPath>cpuShot.h</itemPath>
       <itemPath>shot.h</itemPath>
     </logicalFolder>
@@ -14,7 +18,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Age.cpp</itemPath>
+      <itemPath>Info.cpp</itemPath>
       <itemPath>Shot.cpp</itemPath>
+      <itemPath>User.cpp</itemPath>
+      <itemPath>cpuShot.cpp</itemPath>
+      <itemPath>../../../Desktop/leftLeft.txt</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -39,7 +48,25 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="../../../Desktop/leftLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Age.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Age.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Info.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Intro.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Shot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="User.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="User.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cpuShot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cpuShot.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -68,7 +95,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../../../Desktop/leftLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Age.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Age.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Info.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Intro.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Shot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="User.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="User.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cpuShot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cpuShot.h" ex="false" tool="3" flavor2="0">
       </item>

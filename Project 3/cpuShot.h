@@ -1,42 +1,32 @@
 /* 
  * File:   cpuShot.h
- * Author: Tony Reyes
- * December 6, 2014, 12:20 PM
- * Random CPU Shot Location Implementation
+ * Author: User
+ *
+ * Created on December 11, 2014, 2:41 PM
  */
 
 #ifndef CPUSHOT_H
 #define	CPUSHOT_H
-//Shot Location Class
-//My Libraries
-#include "cpuShot.h"      //cpuShot Class File
-#include <iostream> 
-#include <cstdlib> 
- #include<iomanip> 
- #include <ctime> 
-using namespace std;
-class Cpu{
+#include "shot.h"
+class Cpu : public Shot
+{
     
     private:
+              //User Input Member
        int cpuRand;
-     
-    
-public:
-    Cpu (int loc){
-        cpuRand=loc;
-         //Set Random Seed For Shot Generator 
-   srand(static_cast<unsigned int>(time(0))); 
+       int a;
+    public:
+  
+  
+          
+    void set(int);
  
-   //Set Computer Shot Location to Random 
-   loc=rand()%3+1;  
-    }
-    
-    
     int getCpu()const
-    
     {return cpuRand;}
    
-};
+    void print();
+    Cpu (int u = 0, int v = 0);
+   };
 
 
 #endif	/* CPUSHOT_H */
